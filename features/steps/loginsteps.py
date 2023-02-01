@@ -22,7 +22,6 @@ def valid_user(context):
     username = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
     context.driver.find_element_by_xpath(username).send_keys("Admin")
     print('I enter username')
-    # assert True is not False
 
 
 @when('i enter password')
@@ -30,7 +29,6 @@ def valid_password(context):
     password = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
     context.driver.find_element_by_xpath(password).send_keys("admin123")
     print('i enter password')
-    # assert True is not False
 
 
 @when('I click on submit button')
@@ -38,13 +36,11 @@ def submit_btn(context):
     submit_btn = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
     context.driver.find_element_by_xpath(submit_btn).click()
     print('I click on submit button')
-    # assert True is not False
 
 
 @then('i should see home page')
 def home_page(context):
     print('i should see home page')
-    #assert context.failed is False
     assert context.driver.current_url == 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'
 
     context.driver.close()
