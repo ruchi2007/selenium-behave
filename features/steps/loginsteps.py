@@ -17,25 +17,25 @@ def login_page(context):
     # log.info('I am in login page')
 
 
-@when('i enter username')
-def valid_user(context):
-    username = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
-    context.driver.find_element_by_xpath(username).send_keys("Admin")
-    print('I enter username')
+# @when('i enter username')
+# def valid_user(context):
+#     username = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+#     context.driver.find_element_by_xpath(username).send_keys("Admin")
+#     print('I enter username')
 
 
-@when('i enter password')
-def valid_password(context):
-    password = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
-    context.driver.find_element_by_xpath(password).send_keys("admin123")
-    print('i enter password')
+# @when('i enter password')
+# def valid_password(context):
+#     password = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+#     context.driver.find_element_by_xpath(password).send_keys("admin123")
+#     print('i enter password')
 
 
-@when('I click on submit button')
-def submit_btn(context):
-    submit_btn = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
-    context.driver.find_element_by_xpath(submit_btn).click()
-    print('I click on submit button')
+# @when('I click on submit button')
+# def submit_btn(context):
+#     submit_btn = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+#     context.driver.find_element_by_xpath(submit_btn).click()
+#     print('I click on submit button')
 
 
 @then('i should see home page')

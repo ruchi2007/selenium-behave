@@ -28,7 +28,7 @@ def invalid_password(context):
     print('i enter invalid password')
 
 
-@when('i click submit button')
+@when('i click submit btn')
 def submit_button(context):
     submit_btn = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
     context.driver.find_element_by_xpath(submit_btn).click()

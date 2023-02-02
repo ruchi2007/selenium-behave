@@ -3,5 +3,5 @@ Feature: loginPage
     Given i go to login page
     When i enter invalid username
     And i enter invalid password
-    And i click submit button
+    And i click submit btn
     Then i should see error message
